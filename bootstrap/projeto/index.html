@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://tropicalestufas.com.br/wp-content/uploads/2020/05/vantagens_horta_interna.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+        }
+
+        main {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px); 
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); 
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-subtext {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .text-body-secondary {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header data-bs-theme="dark">
+        <div class="navbar navbar-light bg-success shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>Monitoramento</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>Outros Monitoramentos</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="/bootstrap/dashboard/index.html" class="text-white">Monitoramento em tempo real do AR</a></li>
+                            <li><a href="/bootstrap/dashboard2/index.html" class="text-white">Monitoramento em tempo real do ÁGUA</a></li>
+                            <li><a href="/bootstrap/sign-in/index.html" class="text-white">Sair</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="/bootstrap/assets/imagens/temperatura-da-agua.png" class="card-img-top mx-auto d-block" alt="Imagem de perfil" style="width: 200px; height: 200px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">Temperatura da Água</p>
+                            <p class="card-subtext">24.065°C</p>
+                            <small class="text-body-secondary">Últimos minutos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="/bootstrap/assets/imagens/temperatura-do-ar.png" class="card-img-top mx-auto d-block" alt="Imagem de perfil" style="width: 200px; height: 200px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">Temperatura do Ar</p>
+                            <p class="card-subtext">26.0°C</p>
+                            <small class="text-body-secondary">Últimos minutos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="/bootstrap/assets/imagens/umidade do ar.png" class="card-img-top mx-auto d-block" alt="Imagem de perfil" style="width: 200px; height: 200px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">Umidade</p>
+                            <p class="card-subtext">70.0%</p>
+                            <small class="text-body-secondary">Últimos minutos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="/bootstrap/assets/imagens/pH.png" class="card-img-top mx-auto d-block" alt="Imagem de perfil" style="width: 200px; height: 200px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">pH</p>
+                            <p class="card-subtext">7.20p</p>
+                            <small class="text-body-secondary">Últimos minutos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="/bootstrap/assets/imagens/condutividade_eletrica.png" class="card-img-top mx-auto d-block" alt="Imagem de perfil" style="width: 200px; height: 200px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">Condutividade Elétrica</p>
+                            <p class="card-subtext">775ppm</p>
+                            <small class="text-body-secondary">Últimos minutos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="text-muted mb-0">&copy; 2024 Seu Site - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
